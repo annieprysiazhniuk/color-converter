@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+        <div class="instruction">
+            <h1>Hex to RGB / RGB to Hex converter</h1>
+            <p>Enter the HEX or RGB color value you would like to convert and enjoy the result</p>
+            <p>For more information</p>
+            <a href="#main-info" class="scroll-down-btn">Scroll Down</a>
+        </div>
+        <div class="inputs-container">
+            <div class="input-container hex-container">
+
+                <label for="hex-value" class="hex-label">#</label>
+                <input type="text" class="input-elem hex-elem" name="hex" id="hex-value" value="385900" maxlength="6"
+                    autocomplete="off" pattern="[a-fA-F0-9]{3,6}"
+                    title="Can only contain numbers 0-9 and/or A, B, C, D, F letters">
+            </div>
+            <div class="input-container rgb-container" id="rgb-inputs-container">
+                <span>rgb(</span>
+                <input type="text" class="input-elem rgb-elem" name="rgb-1" id="rgb-value-1" value="56"
+                    autocomplete="off" maxlength="3">
+                <span>,</span>
+                <input type="text" class="input-elem rgb-elem" name="rgb-2" id="rgb-value-2" value="89"
+                    autocomplete="off" maxlength="3">
+                <span>,</span>
+                <input type="text" class="input-elem rgb-elem" name="rgb-3" id="rgb-value-3" value="0"
+                    autocomplete="off" maxlength="3">
+                <span>)</span>
+            </div>
+        </div>
+        <p class="error"></p>
+    </div>
+
+    <div id="main-info">
+        <div class="container">
+            <div class="info-box">
+                <p>This is the easy hex to rgb converter Tool.</p>
+                <p>Whether you're a designer, developer, or simply someone who loves playing with colors, our tool makes
+                    the
+                    conversion process a breeze. With real-time updates, all you need to do is enter the color value,
+                    and our
+                    website will instantly convert it to the corresponding Hex or RGB format. </p>
+                <p>The dynamic background color
+                    feature provides visual feedback, allowing you to see the converted color in action. </p>
+
+                <p>Are you curious about RGB and Hex color formats? RGB (Red, Green, Blue) is a color model that
+                    represents colors by mixing different intensities of red, green, and blue light. Each component can
+                    have values ranging from 0 to 255, resulting in over 16 million possible color combinations. </p>
+                <p>On the
+                    other hand, Hex (Hexadecimal) is a numerical representation of colors using a combination of six
+                    alphanumeric characters. It is widely used in web design and development. Hex values consist of a
+                    hashtag (#) followed by six characters, with each pair representing the intensity of red, green, and
+                    blue using hexadecimal digits (0-9 and A-F). </p>
+
+                <p>Our Hex to RGB / RGB to Hex converter website
+                    effortlessly translates colors between these two formats, saving you time and allowing you to work
+                    with colors more efficiently. Give it a try and unlock the world of color possibilities!</p>
+
+                <p>If you have an idea or feedback for our converter, we would love to hear it throught email <a
+                        href="mailto:anniprysiazhniuk@gmail.com">anniprysiazhniuk@gmail.com</a>. Thank you.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

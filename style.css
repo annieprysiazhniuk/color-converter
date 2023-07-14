@@ -1,0 +1,114 @@
+/* Import Fonts Inconsolata from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 20px "Inconsolata", sans-serif;
+    background: #385900;
+}
+
+.container {
+    max-width: 1024px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.instruction {
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin: 20px 0 20px;
+    text-align: center;
+}
+
+.instruction .scroll-down-btn {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    background: #c10198;
+    color: #fff;
+    border: 1px solid #c10198;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.inputs-container {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.input-container {
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.input-container>input {
+    min-height: 40px;
+    min-width: 300px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    font: 400 20px "Inconsolata", sans-serif;
+    padding: 0 20px;
+}
+
+.hex-container>input {
+    margin-right: -28px;
+}
+
+label.hex-label {
+    position: absolute;
+    bottom: 19px;
+    left: 11px;
+}
+
+.input-container.rgb-container input {
+    max-width: 80px;
+    min-width: 30px;
+}
+
+
+p.error {
+    min-height: 200px;
+    max-width: 410px;
+    background: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+p.error-bg {
+    background: rgb(0 0 0 / 40%);
+}
+
+.info-box {
+    background: rgb(0 0 0 / 40%);
+    padding: 20px 40px;
+    border-radius: 6px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.info-box a {
+    background: #c422ad;
+    color: #fff;
+}
